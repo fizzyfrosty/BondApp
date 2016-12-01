@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xQq-Jd-V2P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="LTG-Pa-Imf">
+            <objects>
+                <viewController id="xQq-Jd-V2P" customClass="ViewController" customModule="BondApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JVW-ia-TSh"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCf-Vb-yLS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nic-vY-S5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter any words, and press OK to show it in an Alert View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-SQ-9Z6">
+                                <rect key="frame" x="21" y="253" width="333" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGs-qJ-Vmi">
+                                <rect key="frame" x="88" y="319" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zih-fd-MnZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="m3z-Nl-jz3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-x7-PAg">
+                                <rect key="frame" x="173" y="374" width="30" height="30"/>
+                                <state key="normal" title="OK"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fy7-SQ-9Z6" firstAttribute="height" relation="lessThanOrEqual" secondItem="nic-vY-S5N" secondAttribute="height" multiplier="0.5" id="Cbl-9l-MJT"/>
+                            <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="top" secondItem="fy7-SQ-9Z6" secondAttribute="bottom" constant="25" id="HhM-Cj-wPQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fy7-SQ-9Z6" secondAttribute="trailing" constant="5" id="HlF-Rg-SMg"/>
+                            <constraint firstItem="OWS-x7-PAg" firstAttribute="top" secondItem="ZGs-qJ-Vmi" secondAttribute="bottom" constant="25" id="Hnn-xj-Yc2"/>
+                            <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="centerY" secondItem="nic-vY-S5N" secondAttribute="centerY" id="Mtx-RW-paM"/>
+                            <constraint firstItem="fy7-SQ-9Z6" firstAttribute="leading" secondItem="nic-vY-S5N" secondAttribute="leadingMargin" constant="5" id="iAv-vI-Bdx"/>
+                            <constraint firstItem="OWS-x7-PAg" firstAttribute="centerX" secondItem="nic-vY-S5N" secondAttribute="centerX" id="kaX-m3-Z5J"/>
+                            <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="centerX" secondItem="nic-vY-S5N" secondAttribute="centerX" id="l50-75-VBQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="fy7-SQ-9Z6" id="sr2-R7-Ii7"/>
+                        <outlet property="okButton" destination="OWS-x7-PAg" id="qhG-Vj-Jt3"/>
+                        <outlet property="textField" destination="ZGs-qJ-Vmi" id="11J-i8-lgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ft-LV-ZIC" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
