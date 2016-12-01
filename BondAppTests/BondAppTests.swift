@@ -21,9 +21,20 @@ class BondAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    // THIS IS CRAZY. A view controller does NOT load into memory, but calling its .VIEW property forces it to load!!!!
+    // http://kaspermunck.github.io/2012/10/testing-a-view-controllers-iboutlet-connections/
+    func testViewControllerFromStoryboardIsNotNil() {
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        let viewModel = viewController?.viewModel
+        
+        // This is the Magical line right here!! If this didn't exist, any property in the view controller turns up nil
+        _ = viewController?.view
+        
+        
+        XCTAssert(viewController?.viewModel != nil)
     }
     
     func testPerformanceExample() {

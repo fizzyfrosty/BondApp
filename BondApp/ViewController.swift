@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     var viewModel: ViewModel?
     var dataModel: DataModel?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         let viewModel = ViewModel(originalLabelString: self.label.text,
                                   labelString: self.label.text,
                                   textString: self.textField.text)
+        
         
         // Bind view to view model
         self.bindToViewModel(viewModel: viewModel)
@@ -46,6 +49,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Binding DataModel to ViewModel
     func bindDataModel(dataModel: DataModel, toViewModel viewModel: ViewModel) {
         self.dataModel = dataModel
         
@@ -59,6 +63,8 @@ class ViewController: UIViewController {
         })
     }
 
+    
+    // Binding View to ViewModel
     func bindToViewModel(viewModel: ViewModel) {
         self.viewModel = viewModel
         

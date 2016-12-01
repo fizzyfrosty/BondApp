@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="LTG-Pa-Imf">
             <objects>
-                <viewController id="xQq-Jd-V2P" customClass="ViewController" customModule="BondApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="xQq-Jd-V2P" customClass="ViewController" customModule="BondApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JVW-ia-TSh"/>
                         <viewControllerLayoutGuide type="bottom" id="YCf-Vb-yLS"/>

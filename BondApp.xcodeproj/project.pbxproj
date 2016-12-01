@@ -17,6 +17,9 @@
 		4300A0801DEFBE3000497FE4 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A07E1DEFBE3000497FE4 /* ReactiveKit.framework */; };
 		4300A0831DEFBEF000497FE4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0821DEFBEF000497FE4 /* ViewModel.swift */; };
 		4300A0851DEFCB9200497FE4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0841DEFCB9200497FE4 /* DataModel.swift */; };
+		4300A0AF1DF00A0900497FE4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A0A61DF0085E00497FE4 /* Nimble.framework */; };
+		4300A0B21DF00A0F00497FE4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A0A71DF0085E00497FE4 /* Quick.framework */; };
+		4300A0B41DF015D600497FE4 /* BondSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0AD1DF009FA00497FE4 /* BondSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		4300A07E1DEFBE3000497FE4 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 		4300A0821DEFBEF000497FE4 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4300A0841DEFCB9200497FE4 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4300A0A61DF0085E00497FE4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		4300A0A71DF0085E00497FE4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		4300A0AD1DF009FA00497FE4 /* BondSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondSpec.swift; sourceTree = "<group>"; };
+		4300A0B01DF00A0900497FE4 /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Quick.framework.dSYM; path = Carthage/Build/iOS/Quick.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4300A0AF1DF00A0900497FE4 /* Nimble.framework in Frameworks */,
+				4300A0B21DF00A0F00497FE4 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 		4300A0701DEFBD2600497FE4 /* BondAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4300A0AD1DF009FA00497FE4 /* BondSpec.swift */,
 				4300A0711DEFBD2600497FE4 /* BondAppTests.swift */,
 				4300A0731DEFBD2600497FE4 /* Info.plist */,
 			);
@@ -112,6 +122,9 @@
 		4300A07C1DEFBE3000497FE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4300A0B01DF00A0900497FE4 /* Quick.framework.dSYM */,
+				4300A0A61DF0085E00497FE4 /* Nimble.framework */,
+				4300A0A71DF0085E00497FE4 /* Quick.framework */,
 				4300A07D1DEFBE3000497FE4 /* Bond.framework */,
 				4300A07E1DEFBE3000497FE4 /* ReactiveKit.framework */,
 			);
@@ -254,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4300A0721DEFBD2600497FE4 /* BondAppTests.swift in Sources */,
+				4300A0B41DF015D600497FE4 /* BondSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +434,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EZ3EL33ZBM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BondAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.workhorsebytes.BondAppTests;
@@ -435,6 +453,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EZ3EL33ZBM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BondAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.workhorsebytes.BondAppTests;
@@ -463,6 +485,7 @@
 				4300A0781DEFBD2600497FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4300A0791DEFBD2600497FE4 /* Build configuration list for PBXNativeTarget "BondAppTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +494,7 @@
 				4300A07B1DEFBD2600497FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
