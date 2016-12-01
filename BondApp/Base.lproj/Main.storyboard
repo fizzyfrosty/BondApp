@@ -43,22 +43,36 @@
                                 <rect key="frame" x="173" y="374" width="30" height="30"/>
                                 <state key="normal" title="OK"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn8-Ed-UMf">
+                                <rect key="frame" x="88" y="424" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBL-dU-trf">
+                                <rect key="frame" x="230" y="424" width="34" height="30"/>
+                                <state key="normal" title="Load"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fy7-SQ-9Z6" firstAttribute="height" relation="lessThanOrEqual" secondItem="nic-vY-S5N" secondAttribute="height" multiplier="0.5" id="Cbl-9l-MJT"/>
+                            <constraint firstItem="sBL-dU-trf" firstAttribute="top" secondItem="wn8-Ed-UMf" secondAttribute="top" id="Gdc-dC-qna"/>
                             <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="top" secondItem="fy7-SQ-9Z6" secondAttribute="bottom" constant="25" id="HhM-Cj-wPQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fy7-SQ-9Z6" secondAttribute="trailing" constant="5" id="HlF-Rg-SMg"/>
                             <constraint firstItem="OWS-x7-PAg" firstAttribute="top" secondItem="ZGs-qJ-Vmi" secondAttribute="bottom" constant="25" id="Hnn-xj-Yc2"/>
                             <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="centerY" secondItem="nic-vY-S5N" secondAttribute="centerY" id="Mtx-RW-paM"/>
+                            <constraint firstItem="wn8-Ed-UMf" firstAttribute="leading" secondItem="nic-vY-S5N" secondAttribute="leadingMargin" constant="72" id="eDe-w1-mG5"/>
+                            <constraint firstItem="wn8-Ed-UMf" firstAttribute="top" secondItem="OWS-x7-PAg" secondAttribute="bottom" constant="20" id="gvK-VS-Sak"/>
                             <constraint firstItem="fy7-SQ-9Z6" firstAttribute="leading" secondItem="nic-vY-S5N" secondAttribute="leadingMargin" constant="5" id="iAv-vI-Bdx"/>
                             <constraint firstItem="OWS-x7-PAg" firstAttribute="centerX" secondItem="nic-vY-S5N" secondAttribute="centerX" id="kaX-m3-Z5J"/>
                             <constraint firstItem="ZGs-qJ-Vmi" firstAttribute="centerX" secondItem="nic-vY-S5N" secondAttribute="centerX" id="l50-75-VBQ"/>
+                            <constraint firstItem="sBL-dU-trf" firstAttribute="leading" secondItem="wn8-Ed-UMf" secondAttribute="trailing" constant="108" id="lru-1s-123"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="fy7-SQ-9Z6" id="sr2-R7-Ii7"/>
+                        <outlet property="loadButton" destination="sBL-dU-trf" id="X7L-xE-Xb0"/>
                         <outlet property="okButton" destination="OWS-x7-PAg" id="qhG-Vj-Jt3"/>
+                        <outlet property="saveButton" destination="wn8-Ed-UMf" id="SDy-qd-MPC"/>
                         <outlet property="textField" destination="ZGs-qJ-Vmi" id="11J-i8-lgi"/>
                     </connections>
                 </viewController>

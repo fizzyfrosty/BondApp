@@ -16,6 +16,7 @@
 		4300A07F1DEFBE3000497FE4 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A07D1DEFBE3000497FE4 /* Bond.framework */; };
 		4300A0801DEFBE3000497FE4 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A07E1DEFBE3000497FE4 /* ReactiveKit.framework */; };
 		4300A0831DEFBEF000497FE4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0821DEFBEF000497FE4 /* ViewModel.swift */; };
+		4300A0851DEFCB9200497FE4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0841DEFCB9200497FE4 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4300A07D1DEFBE3000497FE4 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 		4300A07E1DEFBE3000497FE4 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 		4300A0821DEFBEF000497FE4 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4300A0841DEFCB9200497FE4 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				4300A05C1DEFBD2600497FE4 /* AppDelegate.swift */,
 				4300A05E1DEFBD2600497FE4 /* ViewController.swift */,
+				4300A0841DEFCB9200497FE4 /* DataModel.swift */,
 				4300A0821DEFBEF000497FE4 /* ViewModel.swift */,
 				4300A0601DEFBD2600497FE4 /* Main.storyboard */,
 				4300A0631DEFBD2600497FE4 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4300A05F1DEFBD2600497FE4 /* ViewController.swift in Sources */,
+				4300A0851DEFCB9200497FE4 /* DataModel.swift in Sources */,
 				4300A0831DEFBEF000497FE4 /* ViewModel.swift in Sources */,
 				4300A05D1DEFBD2600497FE4 /* AppDelegate.swift in Sources */,
 			);
