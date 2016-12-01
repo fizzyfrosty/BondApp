@@ -20,6 +20,7 @@
 		4300A0AF1DF00A0900497FE4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A0A61DF0085E00497FE4 /* Nimble.framework */; };
 		4300A0B21DF00A0F00497FE4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300A0A71DF0085E00497FE4 /* Quick.framework */; };
 		4300A0B41DF015D600497FE4 /* BondSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0AD1DF009FA00497FE4 /* BondSpec.swift */; };
+		4300A0B61DF0277700497FE4 /* DataModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300A0B51DF0277700497FE4 /* DataModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4300A0A71DF0085E00497FE4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4300A0AD1DF009FA00497FE4 /* BondSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondSpec.swift; sourceTree = "<group>"; };
 		4300A0B01DF00A0900497FE4 /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Quick.framework.dSYM; path = Carthage/Build/iOS/Quick.framework.dSYM; sourceTree = "<group>"; };
+		4300A0B51DF0277700497FE4 /* DataModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4300A0AD1DF009FA00497FE4 /* BondSpec.swift */,
+				4300A0B51DF0277700497FE4 /* DataModelSpec.swift */,
 				4300A0711DEFBD2600497FE4 /* BondAppTests.swift */,
 				4300A0731DEFBD2600497FE4 /* Info.plist */,
 			);
@@ -268,6 +271,7 @@
 			files = (
 				4300A0721DEFBD2600497FE4 /* BondAppTests.swift in Sources */,
 				4300A0B41DF015D600497FE4 /* BondSpec.swift in Sources */,
+				4300A0B61DF0277700497FE4 /* DataModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         
         // Create a View Model
         let viewModel = ViewModel(originalLabelString: self.label.text,
-                                  labelString: self.label.text,
                                   textString: self.textField.text)
         
         
@@ -57,6 +56,8 @@ class ViewController: UIViewController {
         _ = viewModel.didSave.observeNext(with: { didSave in
             if didSave == true {
                 dataModel.string = viewModel.textString.value!
+                // This will BREAK a test
+                //dataModel.string = self.label.text!
                 
                 self.showAlert(withMessage: "You just saved: \"\(dataModel.string)\"")
             }
@@ -72,6 +73,9 @@ class ViewController: UIViewController {
         _ = self.textField.bnd_text.observeNext() { string in
             if string != "" {
                 self.label.text = string
+                
+                // This will BREAK a test:
+                //viewModel.labelOriginalString = ""
             }
             else {
                 self.label.text = viewModel.labelOriginalString
