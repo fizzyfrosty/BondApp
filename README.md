@@ -10,7 +10,7 @@ Storyboard and UI elements are created, and then references linked to the ViewCo
 
 A corresponding 'view model' is initialized with arbitrary data.
 
-The View Controller then binds the 'view model' to the 'view'. In a real world situation, this binding logic should be done in the 'controller'.
+The View Controller then binds the 'view model' to the 'view'. In a real world situation, this binding logic should be done in the 'view'.
 
 A 'data model' is initialized with arbitrary data.
 
